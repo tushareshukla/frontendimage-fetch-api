@@ -13,8 +13,8 @@ const ImageComponent = ({
     <div className="card">
       <img src={imageUrl} alt={imageAlt} />
       <div className="dots">
-        <span class="dot-blue"></span>
-        <span class="dot-yellow"></span>
+        <span className="dot-blue"></span>
+        <span className="dot-yellow"></span>
       </div>
       <div className="card-content">
         <h3>{title}</h3>

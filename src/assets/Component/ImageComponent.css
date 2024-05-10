@@ -5,11 +5,13 @@
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.3s ease;
+  /* height: 200; */
+
 }
 
 .card img {
-  width: 100%;
-  height: auto;
+  width: 100vh;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -23,12 +25,12 @@
 }
 .card-content p {
     font-size: 0.875em;
-    color: #6c757d;
+    color: #b7b5b5;
     margin-bottom: 1em;
 }
 .card-footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.75em;
-    color: #6c757d;
+    color: #b7b5b5;
 }

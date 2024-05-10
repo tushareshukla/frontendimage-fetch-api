@@ -1,19 +1,17 @@
 import React from "react";
 import "./ImageComponent.css";
-const ImageComponent = () => {
+const ImageComponent = ({imageUrl,title,author,description,imageAlt,imageDate}) => {
   return (
     <div className="card">
-      <img src="https://via.placeholder.com/150" alt="placeholder" />
+      <img src={imageUrl} alt={imageAlt} />
       <div className="card-content">
-        <h3>Title</h3>
+        <h3>{title}</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-          scelerisque, felis a luctus consectetur, sem odio dictum mi, vitae
-          dignissim sapien metus in nisl.
+         {description}
         </p>
         <div className="card-footer">
-          <span>John Doe - Product Owner</span>
-          <span>Nov 25, 2020</span>
+          <span>{author}</span>
+          <span>{imageDate}</span>
         </div>
       </div>
     </div>

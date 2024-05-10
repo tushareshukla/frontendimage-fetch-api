@@ -11,11 +11,15 @@ function App() {
       .then(data => setPosts(data))
       .catch(error => console.error('Error fetching data:', error));
   }, []);
-  return <div className="card-container" style={{ margin: "0px 200px"}}>
-  <ImageComponent/>
-  <ImageComponent/>
-  <ImageComponent/>
-  <ImageComponent/>
+  return <div className="card-container" style={{ margin: "120px 150px"}}>
+  {
+    posts.map((post) => (<ImageComponent key={post.id}  imageUrl={post.thumbnail.small} title={post.title}  author={post.author.name} description={post.content} imageDate={new Date(post.date * 1000).toLocaleDateString('en-US', {
+      month: 'short',
+      day: '2-digit',
+      year: 'numeric'
+    })} />))
+  }
+  
   </div>;
 }
 

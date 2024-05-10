@@ -2,37 +2,57 @@
   position: relative;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   transition: all 0.3s ease;
   /* height: 200; */
-
 }
 
 .card img {
   width: 100%;
-  height: 250px;
+  height: 220px;
   /* object-position: 50% 50%; */
   object-fit: fill;
-
 }
 
 .card-content {
-    padding: 1em;
+  padding: 1.2em;
 }
 .card-content h3 {
-    font-size: 1.25em;
-    font-weight: 600;
-    margin-bottom: 0.5em;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
 }
 .card-content p {
-    font-size: 0.875em;
-    color: #b7b5b5;
-    margin-bottom: 1em;
+  font-size: 0.85em;
+  color: #b7b5b5;
+  margin-bottom: 2.2em;
+  margin-top: 2rem;
 }
 .card-footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.75em;
-    color: #b7b5b5;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75em;
+  color: #b7b5b5;
+  margin-bottom: 1.2em;
 }
+.dots{
+    padding-left: 1.2em;
+    padding-top: 1.2em;
+}
+.dot-blue {
+  height: 12px;
+  width: 12px;
+  background-color: #00d0ff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.dot-yellow {
+    height: 12px;
+    width: 12px;
+    background-color: #ffbf00;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  

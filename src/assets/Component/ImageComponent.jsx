@@ -1,6 +1,6 @@
 import React from "react";
 import "./ImageComponent.css";
-const ImageComponent = ({imageUrl,title,author,description,imageAlt,imageDate}) => {
+const ImageComponent = ({imageUrl,title,author,description,imageAlt,imageDate, role}) => {
   return (
     <div className="card">
       <img src={imageUrl} alt={imageAlt} />
@@ -10,7 +10,7 @@ const ImageComponent = ({imageUrl,title,author,description,imageAlt,imageDate}) 
          {description}
         </p>
         <div className="card-footer">
-          <span>{author}</span>
+          <span>{author} - {role}</span>
           <span>{imageDate}</span>
         </div>
       </div>

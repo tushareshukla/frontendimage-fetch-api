@@ -11,9 +11,8 @@ const ImageComponent = ({
 }) => {
   return (
     <div className="card">
-        
       <img src={imageUrl} alt={imageAlt} />
-      <div class="overlay">Learn More</div>
+      <div class="overlay" onClick={{}}>Learn More</div>
       <div className="dots">
         <span className="dot-blue"></span>
         <span className="dot-yellow"></span>
@@ -28,7 +27,6 @@ const ImageComponent = ({
           <span>{imageDate}</span>
         </div>
       </div>
-     
     </div>
   );
 };
